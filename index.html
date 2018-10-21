@@ -24,7 +24,7 @@
                     <li><a href="#about">About | </a></li>
                     <li><a href="#skills-header">Skills | </a></li>
                     <li><a href="#projects">Projects | </a></li>
-                    <li id="contact">Contact
+                    <li id="contact"><a href="">Contact
                         <div id="dropdown-content">
                             <ul id="sub-menu">
                                 <a href="mailto:andre_dean@icloud.com?subject=Contact from your portfolio site"><li>Email</li></a>
@@ -32,7 +32,7 @@
                                 <a href="https://www.linkedin.com/in/andre-d-sfbay" target="_blank"><li>LinkedIn</li></a>
                             </ul>
                         </div>
-                    </li>
+                    </a></li>
                 </ul>
             </nav>
         </header>
@@ -114,8 +114,8 @@
         <script>
             window.addEventListener("scroll", () => {
                 let homeButton = document.getElementById('back-to-top');
+                
                 if(window.pageYOffset > 1000 ){
-                    console.log(pageYOffset);
                     homeButton.style.display = "flex";
                 }else{
                     homeButton.style.display = "none";
