@@ -112,15 +112,32 @@
             </section>
         </main>
         <script>
-            window.addEventListener("scroll", () => {
-                let homeButton = document.getElementById('back-to-top');
-                
-                if(window.pageYOffset > 1000 ){
-                    homeButton.style.display = "flex";
-                }else{
-                    homeButton.style.display = "none";
-                }
+
+          // On mobile handle use click instead of hover.
+          let windowSize = window.matchMedia("(max-width: 400px)");
+
+          if(windowSize.matches){
+            let contact = document.getElementById('contact');
+            let dropdownContent = document.getElementById('dropdown-content');
+
+            contact.addEventListener("click", () => {
+              if(dropdownContent.style.opacity == 1){
+                dropdownContent.style.opacity = 0;
+              }else{
+                dropdownContent.style.opacity = 1;
+              }
             });
+          }
+
+          window.addEventListener("scroll", () => {
+            let homeButton = document.getElementById('back-to-top');
+            
+            if(window.pageYOffset > 1000 ){
+                homeButton.style.display = "flex";
+            }else{
+                homeButton.style.display = "none";
+            }
+          });
         </script>
     </body>
 </html>

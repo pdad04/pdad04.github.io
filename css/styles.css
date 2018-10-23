@@ -18,7 +18,7 @@ header#portfolio-header{
 
 body{
   margin: 0;
-  background-color: darkslategray;
+  background-image: linear-gradient(to bottom, #304352, #D7D2CC);
   font-family: "Roboto", sans-serif;
   line-height: 1.5em;
 }
@@ -143,7 +143,6 @@ nav#main-nav li{
   position: absolute;
   margin-top: 5px;
   background-color: rgba(0,0,0,0.7);
-
 }
 
 #nav-items{
@@ -222,5 +221,15 @@ nav#main-nav li{
 
   #caption{
       font-size: 1.5em;
+  }
+
+  #dropdown-content{
+    box-sizing: border-box;
+    display: block;
+    opacity: 0;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 5px;
+    background-color: rgba(0,0,0,0.7);
   }
 }
