@@ -1,5 +1,16 @@
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden
+}
+
+.skills-images{
+  box-sizing: border-box;
+  height: 112.48px;
+  margin-top: 2em;
+}
+
+/* html{
+  scroll-behavior: smooth;
 }
 
 header#portfolio-header{
@@ -232,4 +243,4 @@ nav#main-nav li{
     margin-top: 5px;
     background-color: rgba(0,0,0,0.7);
   }
-}
+} */
