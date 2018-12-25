@@ -8,22 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700i" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/images/android-chrome-192x192.png">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper grey darken-3">
-            <div class="brand-logo">&#123;Andre Dean&#125;</div>
-            <ul id="nav-mobile" class="right">
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li>Andre</li>
+    <div class="navbar-fixed">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-wrapper grey darken-3">
+                <div class="brand-logo">&nbsp; &#123; Andre Dean &#125;</div>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul id="nav-mobile" class="right hide-on-small-only">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav grey lighten-3" id="mobile-demo">
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#footer">Contact</a></li>
     </ul>
+
     <main>
         <section id="about-me">
             <div class="row">
@@ -34,14 +45,20 @@
             <div class="row">
                 <div class="col s12 l3">
                     <figure>
-                        <img class="responsive-img circle" src="images/IMG_6012.jpg" />
+                        <img class="responsive-img circle" id="self-photo" src="images/IMG_8068.jpg" />
                     </figure>
                 </div>
                 <div class="col s12 l8 left-align">
-                    <div>
-                    <p class="flow-text">
-                        Lorem ipsum dolor sit amet, lacinia viverra volutpat lacus justo sed, orci praesent fusce nisl mi, neque arcu, nisl nisl sollicitudin lectus eget, aenean justo et vivamus aliquet. Cursus egestas vel imperdiet diam dui nostra. Ornare id a, cursus nec, turpis morbi amet, justo semper nonummy, molestie amet eleifend nulla ipsum. Leo eget at, amet metus lacus est eu eget metus, nec cursus arcu vel, proin mauris cras mauris, per vivamus enim vulputate porttitor. Mollis ante habitasse adipiscing aenean dolor sed, sed est pulvinar id. Auctor quis sed ultrices dolor a eros. Vel urna sodales nullam sed, risus ante nulla, sed amet nonummy sed elementum aliquam, vestibulum per, mi metus suspendisse. Est ultricies in mi, non parturient eu.
-                        Etiam aenean, donec sed senectus erat velit volutpat, morbi augue laoreet amet magna sed, deleniti vitae. Lorem cras volutpat quam, ut hendrerit, mi neque viverra cursus. Proin posuere quisque, vestibulum amet consectetuer, tellus justo neque. Et nulla. Vestibulum maecenas quam mauris. Donec voluptatem sed vivamus. Velit nec eu quis lacus neque, iaculis pretium ornare a ut fusce, nec venenatis. Leo curabitur amet, amet laoreet metus quam, ac nullam netus molestie velit consectetuer, vivamus non nec. Nec dignissim augue tempor urna porttitor, sed nisl molestie donec vel consectetuer, donec auctor convallis. In consequat commodo nam, dui quam natoque neque, ut eget lorem. Torquent eu suspendisse ut.
+                    <div class="descriptive-text">
+                    <p>
+                        I have always enjoyed a challenge and solving problems, and although my work has given me the chance to do that,
+                        I wanted to step into something that offered bigger challenges and a chance to make a bigger impact on the work that I do. 
+                        That is why I decided to make the move into software development.
+                    </p>
+                    <p>
+                        I have spent years working directly with engineering, product managers and customers to help bring new products and services 
+                        to market. I am highly motivated and driven to continue to solve challenging problems that make a positive impact while continuing 
+                        to improve on my skill set as a developer.
                     </p>
                     </div>
                 </div>
@@ -50,8 +67,12 @@
         <!-- SKILLS SECTION -->
         <section id="skills">
             <div class="row">
-                <div class="col s12 offset-m3">
-                    <p>Below are a list of technologies that I have currently used.</p>
+                <div class="col s12 m8 offset-m3 descriptive-text">
+                    <p>
+                        Currently, my focus is mainly on Frontend work with React being my framework of choice. Though my focus is frontend I have also done 
+                        some backend work with Rails and recently began learning NodeJS. Below you will find the current technologies 
+                        that I have worked with.
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -97,6 +118,15 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <h1>Projects</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m8 offset-m3 descriptive-text">
+                    <p>
+                        Beyond the projects I have highlighted below I also spend time solving challenges at <a href="www.codefights.com" target="_blank">Codefights</a> 
+                        which I use to help strengthen my JavaScript skills. I have included the challenges I have solved on my 
+                        <a href="https://www.github.com/pdad04/codeFights">Github</a>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -174,18 +204,24 @@
             </div>
         </section>
     </main>
-    <footer class="page-footer grey darken-3 valign-wrapper">
+    <footer class="page-footer grey darken-3 valign-wrapper" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col s3 offset-s4 center">
-                    <a href="https://www.github.com/pdad04" class="fab fa-github grey-text"></a>
+                <div class="col s2 m1 offset-s4 offset-m5 center">
+                    <a href="https://www.github.com/pdad04"><span class="fab fa-github grey-text" style="font-size: 2rem;"></span></a>
                 </div>
-                <div class="col s1 center">
-                    <a href="https://www.linkedin.com/in/andre-d-sfbay" class="fab fa-linkedin grey-text"></a>
+                <div class="col s2 m1">
+                    <a href="https://www.linkedin.com/in/andre-d-sfbay"><span class="fab fa-linkedin grey-text" style="font-size: 2rem;"></span></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+  });
+    </script>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
