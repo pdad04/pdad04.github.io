@@ -26,10 +26,8 @@ section{
   padding-top: 10px;
 }
 
-#skills{
-  padding-top: 70px;
-}
 .descriptive-text p{
+  padding-top: 2em;
   font-family: 'Roboto', sans-serif;
   line-height: 2em;
   font-size: 1.5em;
