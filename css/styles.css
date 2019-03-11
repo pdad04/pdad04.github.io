@@ -1,43 +1,391 @@
-html{
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  color: #333333;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.skills-images{
-  box-sizing: border-box;
-  height: 112.48px;
-  margin-top: 1.5em;
+.abstract-astrology-astronomy-1169754 {
+  width: 100vw;
+  height: 1024px;
+  opacity: 1
+}
+
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1024px;
+  background: url('../images/abstract-astrology-astronomy-1169754.png') center center no-repeat;
+  background-size: cover;
+
+}
+
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #000f4b, #000484);
+  opacity: 0.5;
+}
+
+#nav{
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+
+#brand-logo{
+  width: 172px;
+  height: 44px;
+  margin-left: 80px;
+  margin-top: 22px;
+  font-family: Avenir;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff
+}
+
+.site-nav{
+  position: absolute;
+  right: 80px;
+  margin-top: 10px;
+}
+
+.site-nav a {
+  color: #ffffff;
+}
+
+.site-nav ul li {
+  margin-right: 52px;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  list-style: none;
+  display: inline-block;
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+#caption {
+  font-family: Ayuthaya;
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+#blurb {
+  font-family: Avenir;
+  width: 736px;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.content-header {
+  display: flex;
+  justify-content: center;
+}
+
+#about-details{
+  display: flex;
+  margin-top: 75px;
+}
+
+#self-photo {
+  width: 242px;
+  height: 308px;
+  margin-left: 83px;
+  margin-right: 45px;
+}
+
+#selfie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#about-text {
+  width: 60.052vw;
+  margin: 0 auto 0 45px;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;  
+}
+
+#about-text p {
+  margin-bottom: 30px;
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 4.375em;
+.section-header{
+  font-family: Ayuthaya;
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
 }
 
-section{
-  padding-top: 10px;
+.line {
+  width: 103px;
+  height: 2px;
+  border: solid 3px #000000;
+  margin: 0 auto;
 }
 
-.descriptive-text p{
-  padding-top: 2em;
-  font-family: 'Roboto', sans-serif;
-  line-height: 2em;
-  font-size: 1.5em;
-  font-weight: lighter;
+#skills {
+  width: 100vw;
+  height: 801px;
+  margin-top: 100px;
+  background-color: rgba(0,6,104,0.05);
 }
 
-#self-photo{
-  margin-top: 3em;
+#skills-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 75px;
 }
 
-.card-image{
-  height: 60%;
+#skills-text {
+  width: 954px;
+  height: 89px;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#skills-badges {
+  width: 634px;
+  height: 329px;
+  margin-top: 50px;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.badge{
+  display: flex;
+  height: 110px;
+  width: 120px;
+  margin: 1em;
+}
+
+.badge img {
+  width: 100%;
+  height: auto;
+}
+
+.projects {
+  display: flex;
+}
+
+#project-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 75px 0 281px; 
+}
+
+.project {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 75px 50px;
+  box-shadow: 0 0 1px 1px rgba(0, 6, 104, 0.09);
+  overflow: hidden;
+}
+
+.project-image {
+  height: 70%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  font-family: AvenirNext;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 10px;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 10%;
+  z-index: 5;
+  margin-left: 10px;
+}
+
+.details-toggle {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.seperator {
+  position: relative;
+  width: 100%;
+  border: 0.5px solid rgba(0, 6, 104, 0.09);
+}
+
+.project-details {
+  position: absolute;
+  top: 90%;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+
+.show-details{
+  position: absolute;
+  top: 0;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  animation: slide-up 0.3s linear;
+}
+
+.hide-details {
+  position: absolute;
+  top: 90%;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  animation: slide-down 0.3s ease-out;
+}
+
+.header-details {
+  display: flex;
+  font-size: 18px;
+  font-family: Ayuthaya;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-left: 10px;
+}
+
+.details-close-toggle {
+  margin: 1.946rem 20px 0 auto;
+  cursor: pointer;
+}
+
+.project-details-content {
+  margin: 10px;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000
+}
+
+.built-with {
+  font-family: AvenirNext;
+  font-size: 24px;
+}
+
+.project-tech li{
+  padding-bottom: 5px;
+}
+
+#main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000466;
+  font-size: 3rem;
+  width: 100%;
+  height: 154px;
+}
+
+#main-footer a {
+  color: white;
+  margin-left: 18px;
+}
+
+@keyframes slide-up {
+  0% {
+    top: 88%;
+    height: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    height: 90%;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    display: flex;
+    top: 0;
+    opacity: 1;
+    height: 90%;
+  }
+  100% {
+    top: 90%;
+    height: 0;
+    display: flex;
+  }
 }
