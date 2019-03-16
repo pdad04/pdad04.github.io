@@ -14,26 +14,6 @@
 </head>
 <body>
     <!-- Navigation -->
-    <!-- <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper grey darken-3">
-                <div class="brand-logo">&nbsp;Andre Dean</div>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <ul class="sidenav grey lighten-3" id="mobile-demo">
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#footer">Contact</a></li>
-    </ul> -->
     <header>
         <div id="nav">
             <div id="brand-logo">Andre Dean</div>
@@ -42,9 +22,26 @@
                     <li><a href="#about-me">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li>Resume</li>
+                    <li><a href="/AndreDean.pdf">Resume</a></li>
                     <li><a href="#main-footer">Contact</a></li>
                 </ul>
+            </div>
+            <div class="site-nav-mobile">
+                <div class="hamburger-mobile mobile-toggle-open"></div>
+                <div class="hamburger-mobile mobile-toggle-open"></div>
+                <div class="hamburger-mobile mobile-toggle-open"></div>
+            </div>
+            <div class="mobile-slide">
+                <div><i class="fas fa-times mobile-toggle-close"></i></div>
+                <div>
+                    <ul>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="/AndreDean.pdf">Resume</a></li>
+                        <li><a href="#main-footer">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="intro">
@@ -68,9 +65,22 @@
                 <img src="./images/IMG_8068.jpg" alt="Photo of Me" id="selfie">
             </div>
             <div id="about-text">
-                <p>I have always enjoyed a challenge and solving problems, and although my work has given me the chance to do that, I wanted to step into something that offered bigger challenges and a chance to make a bigger impact on the work that I do. That is why I decided to make the move into software development.</p>
-                <p>I have spent years working directly with engineering, product managers and customers to help bring new products and services to market. I am highly motivated and driven to continue to solve challenging problems that make a positive impact while continuing to improve on my skill set as a developer.</p>
-                <p>Currently, my focus is mainly on Frontend work with React being my framework of choice. Though my focus is frontend I have also done some backend work with Rails and recently began learning NodeJS. Below you will find the current technologies that I have worked with.</p>
+                <p>As a web developer I enjoy building anything that helps solve a problem, big or small. I am focused on drawing on the experience I 
+                    gained working directly with engineering, product managers and especially customers to deliver easy to use user friendly applications.
+                </p>
+                <p>
+                    While professionally I have spent my career supporting customers, solving challenging problems and creating applications that users 
+                    enjoy are what really excite me. 
+                </p>
+                <p>
+                    I have always sought to understand as much as I can in the most detail and lowest level possible. I spend my freetime trying to become a
+                    better developer, weather that be reading a <a href="https://github.com/getify/You-Dont-Know-JS">book</a> or listening to a
+                    <a href="https://syntax.fm">podcast</a> by respected web developers.
+                </p>
+                
+                <!-- <p>Currently, my focus is mainly on Frontend work with React being my library of choice. Though my focus is frontend I have also done 
+                    some backend work with Rails and recently began learning NodeJS. Below you will find the current technologies that I have worked with.
+                </p> -->
             </div>
         </div>
     </section>
@@ -151,41 +161,45 @@
                     <div class="seperator"></div>
                     <div class="project-links">
                         <a href="https://favwod.now.sh" target="_blank">Live Site</a>
+                        <a href="https://github.com/pdad04/favwod/tree/master/favwod" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
                     </div>
-                    <div class="project-details" id="favwod-details">
-                        <div class="header-details">
-                            <h3>Favwod</h3>
-                            <div class="details-close-toggle"><i class="fas fa-times"></i></div>
-                        </div>
-                        <div class="project-details-content">
-                            <p>
-                                I built FavWOD to fill a void I found while trying to keep track of workouts I was interested in doing.
-                                Until I built this, I had to rely on writing things down as a note on my phone which I didn't find useful, which
-                                ultimately lead me to not write things down. This is a simple way to enter and track workouts I want to remember.
-                            </p>
-                            <h6 class="built-with">Favwod was built with:</h6>
-                            <ul class="project-tech">
-                                <li>React</li>
-                                <li>React Router</li>
-                                <li>React Materialize</li>
-                                <li>Firebase for data persistance and authentication</li>
-                            </ul>
+                    <div class="project-details-container">
+                        <div class="project-details" id="favwod-details">
+                            <div class="header-details">
+                                <h3>Favwod</h3>
+                                <div class="details-close-toggle"><i class="fas fa-times"></i></div>
+                            </div>
+                            <div class="project-details-content">
+                                <p>
+                                    I built Favwod to fill a void I found while trying to keep track of workouts I was interested in doing.
+                                    Until I built this, I had to rely on writing things down as a note on my phone which I didn't find useful, which
+                                    ultimately lead me to not write things down. This is a simple way to enter and track workouts I want to remember.
+                                </p>
+                                <h6 class="built-with">Favwod was built with:</h6>
+                                <ul class="project-tech">
+                                    <li>React</li>
+                                    <li>React Router</li>
+                                    <li>React Materialize</li>
+                                    <li>Firebase for data persistance and authentication</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                        <div class="project-image">
-                            <img src="./images/RentalWatch.png" alt="">
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-title">
-                            <div>Rental Watch</div>
-                            <div class="details-toggle"><i class="fas fa-ellipsis-v" id="rentalwatch"></i></div>
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-links">
-                            <a href="https://favwod.now.sh" target="_blank">Live Site</a>
-                        </div>
+                    <div class="project-image rw-bg">
+                        <img src="./images/RentalWatch.png" alt="" class="rw-contain">
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-title">
+                        <div>Rental Watch</div>
+                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="rentalwatch"></i></div>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/pdad04/DVD-Dispatch/tree/master/mobile/DvdDispatch" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
+                    </div>
+                    <div class="project-details-container">
                         <div class="project-details" id="rentalwatch-details">
                             <div class="header-details">
                                 <h3>Rental Watch</h3>
@@ -204,20 +218,22 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="project">
-                        <div class="project-image">
-                            <img src="./images/codepen_projects.png" alt="">
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-title">
-                            <div>Codepen</div>
-                            <div class="details-toggle"><i class="fas fa-ellipsis-v" id="codepen"></i></div>
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-links">
-                            <a href="https://favwod.now.sh" target="_blank">Live Site</a>
-                        </div>
+                    <div class="project-image">
+                        <img src="./images/codepen_projects.png" alt="">
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-title">
+                        <div>Codepen</div>
+                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="codepen"></i></div>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/collection/DRVOgO/" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
+                    </div>
+                    <div class="project-details-container">
                         <div class="project-details" id="codepen-details">
                             <div class="header-details">
                                 <h3>Codepen</h3>
@@ -232,20 +248,22 @@
                                     </p>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="project">
-                        <div class="project-image">
-                            <img src="./images/Bloctime.png" alt="">
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-title">
-                            <div>Bloctime</div>
-                            <div class="details-toggle"><i class="fas fa-ellipsis-v" id="bloctime"></i></div>
-                        </div>
-                        <div class="seperator"></div>
-                        <div class="project-links">
-                            <a href="https://favwod.now.sh" target="_blank">Live Site</a>
-                        </div>
+                    <div class="project-image">
+                        <img src="./images/Bloctime.png" alt="">
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-title">
+                        <div>Bloctime</div>
+                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="bloctime"></i></div>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/pdad04/bloctime" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
+                    </div>
+                    <div class="project-details-container">
                         <div class="project-details" id="bloctime-details">
                             <div class="header-details">
                                 <h3>Pomodoro Timer</h3>
@@ -258,6 +276,7 @@
                                     </p>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -271,9 +290,10 @@
         const toggle = document.querySelectorAll('.details-toggle');
         const projectDetails = document.querySelectorAll('.project-details');
         const projectContent = document.querySelector('#project-content');
+        const mobileToggleOpen = document.querySelector(".mobile-toggle-open");
+        const mobileToggleClose = document.querySelector(".mobile-toggle-close");
 
         function toggleProjectDetails(e){
-            console.log(e);
             if(e.target.classList.contains('fas')){
                 const currentProject = e.target.id;
 
@@ -285,7 +305,7 @@
                         setTimeout(function() {
                             projectDetails[i].classList.add("project-details")
                             projectDetails[i].classList.remove("hide-details");
-                        }, 200);
+                        }, 300);
                         return;
                     }else if(projectDetails[i].id === `${currentProject}-details`){
                         projectDetails[i].classList.remove('project-details');
@@ -296,7 +316,16 @@
             }
         }
 
+        function toggleMobileMenu(){
+            const currentMargin = getComputedStyle(document.querySelector('.mobile-slide')).marginRight;
+            let margin = document.querySelector('.mobile-slide');
+
+            currentMargin === "-202px" ? margin.style.marginRight = "0" : margin.style.marginRight = "-202px";
+        }
+
         projectContent.addEventListener('click', toggleProjectDetails);
+        mobileToggleOpen.addEventListener('click', toggleMobileMenu);
+        mobileToggleClose.addEventListener('click', toggleMobileMenu);
 
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
