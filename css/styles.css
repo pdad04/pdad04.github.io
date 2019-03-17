@@ -212,9 +212,10 @@ header::before{
 
 .badges {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   width: 100%;
+  /* margin: 0 auto; */
 }
 
 .badge{
@@ -614,7 +615,6 @@ header::before{
 
   .badges {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
   }
