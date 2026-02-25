@@ -72,9 +72,16 @@
     <button onclick="doNothing()">
       Do Nothing
     </button>
+    <button onclick="login()">
+      Login
+    </button>
+    <div>
+      <p id="user"></p>
+    </div>
     <div>
       <p id="catfact"></p>
     <div>
+    
       
     <script>
       const body = document.getElementsByTagName("body")[0];
@@ -126,6 +133,16 @@
           })
         } catch (error) {}
       };
+
+      const login = () => {
+        const user = { name: "Test User", id: 123, email:"testuser@test.com"}
+        window.DD_RUM.onReady(function() {
+          window.DD_RUM.setUser(user);
+        })
+
+        const userEl = document.getElementById("user");
+        userEl.innerHTML = `User: ${user.name}`;
+      }
     </script>
   </body>
 </html>
