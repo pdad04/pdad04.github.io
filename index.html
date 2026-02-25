@@ -1,322 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andre Dean</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700i" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/images/android-chrome-192x192.png">
-</head>
-<body>
-    <!-- Navigation -->
-    <header>
-        <div id="nav">
-            <div id="brand-logo">Andre Dean</div>
-            <div class="site-nav">
-                <ul>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="/AndreDean.pdf">Resume</a></li>
-                    <li><a href="#main-footer">Contact</a></li>
-                </ul>
-            </div>
-            <div class="site-nav-mobile">
-                <div class="hamburger-mobile mobile-toggle-open"></div>
-                <div class="hamburger-mobile mobile-toggle-open"></div>
-                <div class="hamburger-mobile mobile-toggle-open"></div>
-            </div>
-            <div class="mobile-slide">
-                <div><i class="fas fa-times mobile-toggle-close"></i></div>
-                <div>
-                    <ul>
-                        <li><a href="#about-me">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="/AndreDean.pdf">Resume</a></li>
-                        <li><a href="#main-footer">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="intro">
-            <div class="hello">
-                <p id="caption">Hello, I'm Andre Dean</p>
-                <p id="blurb">
-                    A software Developer from the Bay Area focused on 
-                    creating simple, user-friendly experiences.
-                </p>
-            </div>
-        </div>
-    </header>
-    <!-- Main Section -->
-    <section id="about-me">
-        <div class="content-header">
-            <h1 class="section-header">About Me</h1>
-        </div>
-        <div class="line"></div>
-        <div id="about-details">
-            <div id="self-photo">
-                <img src="./images/IMG_8068.jpg" alt="Photo of Me" id="selfie">
-            </div>
-            <div id="about-text">
-                <p>As a web developer I enjoy building anything that helps solve a problem, big or small. I am focused on drawing on the experience I 
-                    gained working directly with engineering, product managers and especially customers to deliver easy to use user friendly applications.
-                </p>
-                <p>
-                    I have spent my career supporting customers, but solving challenging problems while creating applications that users 
-                    enjoy are what really excite me. 
-                </p>
-                <p>
-                    I have always sought to understand as much as I can in the most detail and lowest level possible. I spend my freetime trying to become a
-                    better developer, whether that be reading a <a href="https://github.com/getify/You-Dont-Know-JS">book</a> or listening to a
-                    <a href="https://syntax.fm">podcast</a> by respected web developers.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="content-header">
-            <h1 class="section-header">Skills</h1>
-        </div>
-        <div class="line"></div>
-        <div id="skills-content">
-            <div id="skills-text">
-                <p>Currently, my focus is mostly on the Frontend with React being my library of choice. Though my focus is frontend I have also done some backend work with Rails. Below you will find the current technologies that I have worked with.</p>
-            </div>
-            <div id="skills-badges">
-                <div class="badges">
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="JavaScript">
-                    </div>
-                    <div class="badge">
-                            <img src="https://cdn.svgporn.com/logos/react.svg" alt="React">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="CSS3">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML5">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/git-icon.svg" alt="GIT">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/ruby.svg" alt="Ruby">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/firebase.svg" alt="Firebase">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/rails.svg" alt="Rails">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/npm.svg" alt="npm">
-                    </div>
-                    <div class="badge">
-                        <img src="https://cdn.svgporn.com/logos/materializecss.svg" alt="Materialize">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        <!-- PROJECTS SECTION -->
-        <section id="projects">
-            <div class="content-header">
-                <h1 class="section-header">Projects</h1>
-            </div>
-            <div class="line"></div>
-            <div id="project-content">
-                <div class="project">
-                    <div class="project-image">
-                        <img src="./images/favwod.png" alt="">
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-title">
-                        <div>Favwod</div>
-                        <div class="details-toggle"><i id="favwod" class="fas fa-ellipsis-v"></i></div>
-                    </div>
-                    
-                    <div class="seperator"></div>
-                    <div class="project-links">
-                        <a href="https://favwod.now.sh" target="_blank">Live Site</a>
-                        <a href="https://github.com/pdad04/favwod/tree/master/favwod" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
-                    </div>
-                    <div class="project-details-container">
-                        <div class="project-details" id="favwod-details">
-                            <div class="header-details">
-                                <h3>Favwod</h3>
-                                <div class="details-close-toggle"><i class="fas fa-times"></i></div>
-                            </div>
-                            <div class="project-details-content">
-                                <p>
-                                    I built Favwod to fill a void I found while trying to keep track of workouts I was interested in doing.
-                                    Until I built this, I had to rely on writing things down as a note on my phone which I didn't find useful, which
-                                    ultimately lead me to not write things down. This is a simple way to enter and track workouts I want to remember.
-                                </p>
-                                <h6 class="built-with">Favwod was built with:</h6>
-                                <ul class="project-tech">
-                                    <li>React</li>
-                                    <li>React Router</li>
-                                    <li>React Materialize</li>
-                                    <li>Firebase for data persistance and authentication</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image rw-bg">
-                        <img src="./images/RentalWatch.png" alt="" class="rw-contain">
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-title">
-                        <div>Rental Watch</div>
-                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="rentalwatch"></i></div>
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-links">
-                        <a href="https://github.com/pdad04/DVD-Dispatch/tree/master/mobile/DvdDispatch" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
-                    </div>
-                    <div class="project-details-container">
-                        <div class="project-details" id="rentalwatch-details">
-                            <div class="header-details">
-                                <h3>Rental Watch</h3>
-                                <div class="details-close-toggle"><i class="fas fa-times"></i></div>
-                            </div>
-                            <div class="project-details-content">
-                                <p>I built this as a React Native iOS app. The purpose of this app is simply a way to keep track of movies that 
-                                    I want to watch when they become available for rent; keeping track with pen and paper or in my notes app wasn't cutting it. 
-                                    The app allows searching the iTunes store and adding movies to your watch list so you can see when the movie becomes available.
-                                </p>
-                                <h6 class="built-with">Rental Watch was built with:</h6>
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>Redux</li>
-                                    <li><a href="https://infinite.red/ignite" target="_blank">IgniteCLI</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="./images/codepen_projects.png" alt="">
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-title">
-                        <div>Codepen</div>
-                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="codepen"></i></div>
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-links">
-                        <a href="https://codepen.io/collection/DRVOgO/" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
-                    </div>
-                    <div class="project-details-container">
-                        <div class="project-details" id="codepen-details">
-                            <div class="header-details">
-                                <h3>Codepen</h3>
-                                <div class="details-close-toggle"><i class="fas fa-times"></i></div>
-                            </div>
-                            <div class="project-details-content">
-                                    <p>
-                                        Here you will find a number of small projects that I have done like a React Calculator or a Markdown 
-                                        Viewer. These are either projects that I found on <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-                                        and completed per their user stories or projects I thought would be good to complete as a way of continuing 
-                                        to learn new skills or improve on my current skill set. 
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="./images/Bloctime.png" alt="">
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-title">
-                        <div>Bloctime</div>
-                        <div class="details-toggle"><i class="fas fa-ellipsis-v" id="bloctime"></i></div>
-                    </div>
-                    <div class="seperator"></div>
-                    <div class="project-links">
-                        <a href="https://github.com/pdad04/bloctime" target="_blank"><i class="fab fa-github"></i>Code on Github</a>
-                    </div>
-                    <div class="project-details-container">
-                        <div class="project-details" id="bloctime-details">
-                            <div class="header-details">
-                                <h3>Pomodoro Timer</h3>
-                                <div class="details-close-toggle"><i class="fas fa-times"></i></div>
-                            </div>
-                            <div class="project-details-content">
-                                    <p>
-                                        This is simply a Pomodoro Timer and was the first project I completed using React. I used this project as my introduction 
-                                        to React so that I could build the 'Rental Watch' app.
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer id="main-footer">
-            <a href="https://www.github.com/pdad04"><span class="fab fa-github"></span></a>
-            <a href="https://www.linkedin.com/in/andre-d-sfbay"><span class="fab fa-linkedin"></span></a>
-    </footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
     <script>
-        const toggle = document.querySelectorAll('.details-toggle');
-        const projectDetails = document.querySelectorAll('.project-details');
-        const projectContent = document.querySelector('#project-content');
-        const mobileToggleOpen = document.querySelector(".mobile-toggle-open");
-        const mobileToggleClose = document.querySelector(".mobile-toggle-close");
-
-        function toggleProjectDetails(e){
-            if(e.target.classList.contains('fas')){
-                const currentProject = e.target.id;
-
-                for(let i = 0; i < projectDetails.length; i++) {
-                    if(projectDetails[i].classList.contains("show-details")){
-                        projectDetails[i].classList.remove("show-details")
-                        projectDetails[i].classList.add("hide-details");
-
-                        setTimeout(function() {
-                            projectDetails[i].classList.add("project-details")
-                            projectDetails[i].classList.remove("hide-details");
-                        }, 300);
-                        return;
-                    }else if(projectDetails[i].id === `${currentProject}-details`){
-                        projectDetails[i].classList.remove('project-details');
-                         projectDetails[i].classList.add("show-details");
-                    }
-                }
-                
-            }
-        }
-
-        function toggleMobileMenu(){
-            const currentMargin = getComputedStyle(document.querySelector('.mobile-slide')).marginRight;
-            let margin = document.querySelector('.mobile-slide');
-
-            currentMargin === "-202px" ? margin.style.marginRight = "0" : margin.style.marginRight = "-202px";
-        }
-
-        projectContent.addEventListener('click', toggleProjectDetails);
-        mobileToggleOpen.addEventListener('click', toggleMobileMenu);
-        mobileToggleClose.addEventListener('click', toggleMobileMenu);
-
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
-  });
+      (function (h, o, u, n, d) {
+        h = h[d] = h[d] || {
+          q: [],
+          onReady: function (c) {
+            h.q.push(c);
+          },
+        };
+        d = o.createElement(u);
+        d.async = 1;
+        d.src = n;
+        n = o.getElementsByTagName(u)[0];
+        n.parentNode.insertBefore(d, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js",
+        "DD_RUM"
+      );
+      fetch("https://catfact.ninja/fact")
+        .then(r => r.json())
+        .then(data => {
+          console.log("catFact early:", data.fact);
+        });
+      
+      window.DD_RUM.onReady(function () {
+        window.DD_RUM.init({
+          clientToken: "pubb8acb34d3c0e6dfec4de976d3ee64de7",
+          applicationId: "0fa0a8e0-e772-405e-851e-bf0284e91922",
+          site: "datadoghq.com",
+          service: "test",
+          env: "test",
+          version: "1",
+          sessionSampleRate: 100,
+          sessionReplaySampleRate: 100,
+          trackAnonymousUser: true,
+          startSessionReplayRecordingManually: true,
+          // trackEarlyRequests: true,
+          // trackViewsManually: true
+          sessionPersistence: "local-storage    "
+      })
+    })
     </script>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+ <body>
+    <div class="main-container">
+      <h1>Webviews in iOS</h1>
+      <p>
+        This page demonstrates a Webview in an iOS app that is instrumented with
+        <a href="https://docs.datadoghq.com/real_user_monitoring/">
+          Datadog RUM</a
+        >
+      </p>
+    </div>
+    <div>
+      <a href="about.html">About Page</a>
+    </div>
+
+    <button id="colorChange" onclick="colorChange()">
+      Change Background Color
+    </button>
+    <button onclick="getFact()">
+      Get Cat Fact
+    </button>
+    <button onclick="doNothing()">
+      Do Nothing
+    </button>
+    <div>
+      <p id="catfact"></p>
+    <div>
+      
+    <script>
+      const body = document.getElementsByTagName("body")[0];
+      const colors = [
+        "Beige",
+        "AliceBlue",
+        "Aqua",
+        "CadetBlue",
+        "antiquewhite",
+      ];
+
+      
+
+      const doNothing = () => {
+        window.DD_RUM.onReady(function() {
+          const error = new Error("Test Error");
+          console.error("Console console.error")
+          window.DD_RUM.addError(error)
+          window.DD_RUM.addAction("DO NOTHING CLICKED!")
+        })
+      }
+
+      const colorChange = () => {
+        const randomColor = Math.floor(Math.random() * colors.length);
+        body.style.backgroundColor = colors[randomColor];
+
+        // window.DD_RUM.onReady(function () {
+        //   window.DD_RUM.addFeatureFlagEvaluation("testFF", "true")
+        //   window.DD_RUM.startView("Home Page");
+        // });
+        
+      };
+
+      const getFact = async () => {
+        let resp;
+
+        try {
+          window.DD_RUM.onReady(function(){
+            window.DD_RUM.startDurationVital("Get_Fact");
+          })
+          resp = await fetch("https://catfact.ninja/fact");
+          const respData = await resp.json();
+          const fact = document.getElementById("catfact");
+
+          fact.innerHTML = respData.fact;
+
+          window.DD_RUM.onReady(function(){
+            window.DD_RUM.stopDurationVital("Get_Fact");
+          })
+        } catch (error) {}
+      };
+    </script>
+  </body>
 </html>
